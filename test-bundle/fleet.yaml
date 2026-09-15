@@ -1,4 +1,4 @@
-defaultNamespace: rzaldiva-test-fleet
+defaultNamespace: default
 
 targetCustomizations:
   - name: zaldiva-deployment
