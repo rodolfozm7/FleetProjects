@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        env:
+          - name: TEST_VARS
+            valueFrom:
+              configMapKeyRef:
+                name: fleet-test-config
+                key: message
+        ports:
+        - containerPort: 80
