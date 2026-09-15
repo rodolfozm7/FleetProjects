@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: fleet-test-config
-  namespace: rzaldiva-test-fleet
+  namespace: default
 data:
   message: "Hello From Fleet"
   environment: "Test"
