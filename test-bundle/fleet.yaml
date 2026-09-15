@@ -1,0 +1,7 @@
+defaultNamespace: rzaldiva-test-fleet
+
+targetCustomizations:
+  - name: fleet-test
+    clusterSelector:
+      matchLabels: 
+        provider.cattle.io: rke2
