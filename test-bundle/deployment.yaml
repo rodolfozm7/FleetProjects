@@ -16,7 +16,7 @@ spec:
       - name: nginx
         image: nginx
         env:
-          - name: TEST_VARS
+          - name: HELLO
             valueFrom:
               configMapKeyRef:
                 name: fleet-test-config
